@@ -1,0 +1,7 @@
+//HOW TO CHANGE javascript and css src to laravel assets by regular expression
+
+//JS:
+<script src="(.+)"></script> -> <script src="{{ asset('$1') }}"></script>
+
+//CSS
+<link rel="stylesheet" href="(.+)"> -> <link rel="stylesheet" href="{{ asset('$1')}}">
